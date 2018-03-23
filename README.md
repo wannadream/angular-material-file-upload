@@ -1,4 +1,6 @@
-# AngularMaterialFileUpload
+# Angular Material File Upload Component Example
+
+As file upload control is not included in Angular Material, let us make it ourselves. Create your own Angular component and share it.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
