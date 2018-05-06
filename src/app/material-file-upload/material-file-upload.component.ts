@@ -51,8 +51,10 @@ export class MaterialFileUploadComponent implements OnInit {
   }
 
   cancelFile(file: FileUploadModel) {
-    if (file && file.sub) {
-      file.sub.unsubscribe();
+    if (file) {
+      if (file.sub) {
+        file.sub.unsubscribe();
+      }
       this.removeFileFromArray(file);
     }
   }
