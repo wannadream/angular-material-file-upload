@@ -1,8 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { HttpClient, HttpResponse, HttpRequest, HttpEventType, HttpErrorResponse } from '@angular/common/http';
-import { Subscription } from 'rxjs/Subscription';
-import { of } from 'rxjs/observable/of';
+import { Subscription ,  of } from 'rxjs';
 import { catchError, last, map, tap } from 'rxjs/operators';
 
 @Component({
