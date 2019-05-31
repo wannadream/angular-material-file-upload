@@ -1,8 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { HttpClient, HttpResponse, HttpRequest, HttpEventType, HttpErrorResponse } from '@angular/common/http';
-import { Subscription } from 'rxjs/Subscription';
-import { of } from 'rxjs/observable/of';
+import { Subscription ,  of } from 'rxjs';
 import { catchError, last, map, tap } from 'rxjs/operators';
 
 @Component({
@@ -31,7 +30,7 @@ export class MaterialFileUploadComponent implements OnInit {
   /** Allow you to add handler after its completion. Bubble up response text from remote. */
   @Output() complete = new EventEmitter<string>();
 
-  private files: Array<FileUploadModel> = [];
+  files: Array<FileUploadModel> = [];
 
   constructor(private _http: HttpClient) { }
 

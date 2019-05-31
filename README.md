@@ -2,6 +2,9 @@
 
 As file upload control is not included in Angular Material, let us make it ourselves. Create your own Angular component and share it.
 
+## Demo
+Online Demo: https://wannadream.github.io/angular-material-file-upload/index.html
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
