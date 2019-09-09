@@ -1,3 +1,6 @@
+<div id="drop-zone" *ngIf="ddarea" (drop)="dropHandler($event)" (dragover)="dragOverHandler($event)">
+  <p style="text-transform: uppercase;">Drag one or more files to this Drop Zone ...</p>
+</div>
 <button mat-button color="warn" (click)="onClick()" type="button">
   <mat-icon>file_upload</mat-icon>
   {{text}}

@@ -6,9 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  showDdArea = true;
 
   onFileComplete(data: any) {
     console.log(data);
+  }
+
+  onShowDdAreaChange(){
+    console.log(this.showDdArea);
   }
 }

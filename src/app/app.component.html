@@ -1,3 +1,5 @@
 <div style="text-align:center">
-  <app-material-file-upload (complete)="onFileComplete($event)"></app-material-file-upload>
+  <mat-slide-toggle color="warn" [(ngModel)]="showDdArea">Show Drag and Drop Area</mat-slide-toggle>
+  <br/>
+  <app-material-file-upload [ddarea]="showDdArea" (complete)="onFileComplete($event)"></app-material-file-upload>
 </div>
